@@ -39,6 +39,8 @@ hr {
     left: 0;
 }
 
+
+
 /* Intro */
 
 .intro {
@@ -297,6 +299,9 @@ hr {
     margin-top: 80px;
 }
 
+.container {
+    padding: 0 40px;
+}
 .about_item {
     width: 380px;
     position: relative;
@@ -585,7 +590,7 @@ hr {
 
 @media only screen and (max-width: 414px) {
 
-    /* 1 block */
+    /* Intro block */
     .intro {
         width: auto;
         max-width: 413px;
@@ -650,35 +655,74 @@ hr {
         margin: 0;
     }
 
-    /* .slider_item {
-        font-size: 16px;
+    /* Intro block end */
+
+
+    /* About block start */
+    .container {
+        padding: 0 25px;
+        max-width: 413px;
     }
 
-    .active::before {
-        width:40px;
-    }
-
-    .slider_num {
-        font-size: 20px;
-    } */
-
-    /* 1 block end */
-
-    /* 2 block start */
     .about {
-        width: 200px;
+        width: 250px;
         flex-direction: column;
+        margin: 0 auto;
+        
     }
 
     .about_item {
         width: 199px;
+        margin-bottom: 20px;
     }
     .about_img img{
         width: 200px;
     }
 
+    /* About block end */
 
-    /* 2 block end */
+    /* Statistic block start */
+
+    .stat {
+        flex-direction: column;
+    }
+
+    .stat_item {
+        padding: 30px 15px;
+    }
+
+    .stat_count {
+        font-size: 35px;
+    }
+    /* Statistic block end */
+
+
+    /* Service block start */
+
+    .service {
+        flex-direction: column;
+    }
+
+    .service_item {
+        margin-bottom: 25px;
+    }
+
+    hr {
+        display: none;
+    }
+
+      /* Service block end */
+
+      
+      /* Devices block start */
+
+      .devices_item {
+        max-width: 250px;
+      }
+      /* Devices block end */
+
+
+
 }
 
 
