@@ -511,7 +511,7 @@ hr {
   
   .popup_close {
     position: absolute;
-    color: black;
+    color: #999;
     font-size: 20px;
     right: 20px;
     top: 10px;
@@ -764,10 +764,23 @@ hr {
         max-width: 80px;
         height: 100%;
       }
-
-
-      
       /* Devices block end */
+
+      /* popup start */
+      .popup__body-inner {
+        max-width: 250px;
+        padding: 30px 25px 40px;
+      }
+
+      .form_title {
+        margin: 20px 0 20px;
+      }
+
+      .form_textarea {
+        margin-bottom: 37px;
+      }
+
+      /* popup end */
 
 
 
