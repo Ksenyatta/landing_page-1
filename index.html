@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Try</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main_container">
+    <header class="header header_sticky">
+            <div class="header_inner">
+                <div class="header_logo">MoGo</div>
+
+                <nav class="nav">
+                    <a class="nav_link" href="#">About</a>
+                    <a class="nav_link" href="#">Service</a>
+                    <a class="nav_link" href="#">Work</a>
+                    <a class="nav_link" href="#">Blog</a>
+                    <a class="nav_link" href="#">Contact</a>
+                </nav>
+            </div>
+
+            <div class="header_burger">
+                <img src="img/burger.png" onclick="showBurger()" class="burger_icon" alt="">
+                    <div id="nav_burger" class="show">
+                        <nav class="burger_menu">
+                            <a class="nav_link" href="#">About</a>
+                            <a class="nav_link" href="#">Service</a>
+                            <a class="nav_link" href="#">Work</a>
+                            <a class="nav_link" href="#">Blog</a>
+                            <a class="nav_link" href="#">Contact</a>
+                        </nav>
+                    </div>
+                
+            </div>
+
+    </header>
+
+    <script>
+        function showBurger() {
+            document.getElementById("nav_burger").classList.toggle("show");
+        }
+    </script>
+
+    <div class="intro">
+            <div class="intro_inner">
+                <h2 class="intro_suptitle">Creative template</h2>
+                <h1 class="intro_title">Welcome to MoGo</h1>
+
+                <a class="button" href="#popup">Contact us</a>
+            </div>
+
+            <div class="slider">
+                <div class="slider_item active"><span class="slider_num">01</span> Intro</div>
+                <div class="slider_item"><span class="slider_num">02</span> Work</div>
+                <div class="slider_item"><span class="slider_num">03</span> About</div>
+                <div class="slider_item"><span class="slider_num">04</span> Contacts</div>
+            </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section_header">
+                <h3 class="section_suptitle">What we do</h3>
+                <h2 class="section_title">Story about us</h2>
+            </div>
+
+            <div class="section_text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+
+            <div class="about">
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="img/about/about 1.jpg" alt="">
+                    </div>
+                    <div class="about_text">super team</div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="img/about/about 2.jpg" alt="">
+                    </div>
+                    <div class="about_text">super team</div>
+                </div>
+                <div class="about_item">
+                    <div class="about_img">
+                        <img src="img/about/about 3.jpg" alt="">
+                    </div>
+                    <div class="about_text">super team</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--<div class="statistics">
+        <div class="container">
+
+            <div class="stat">
+                <div class="stat_item">
+                    <div class="stat_count">
+                        42
+                    </div>
+                    <div class="stat_text">
+                        Web Design Projects
+                    </div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">
+                        123
+                    </div>
+                    <div class="stat_text">
+                        Happy client
+                    </div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">
+                        15
+                    </div>
+                    <div class="stat_text">
+                        Award winner
+                    </div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">
+                        99
+                    </div>
+                    <div class="stat_text">
+                        Cup of coffee
+                    </div>
+                </div>
+                <div class="stat_item">
+                    <div class="stat_count">
+                        24
+                    </div>
+                    <div class="stat_text">
+                        Members
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+
+            <div class="section_header">
+                <h3 class="section_suptitle">We work with</h3>
+                <h2 class="section_title">Amazing Services</h2>
+            </div>
+
+            <div class="service">
+                <div class="service_item">
+                    <img class='service_img' src="img/service/1.jpg" alt="">
+                    <h1 class="service_title">Photography</h1>
+                    <h2 class="service_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor. </h2>
+                </div>
+                <div class="service_item">
+                    <img class='service_img' src="img/service/2.jpg" alt="">
+                    <h1 class="service_title">Web design</h1>
+                    <h2 class="service_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </h2>
+                </div>
+                <div class="service_item">
+                    <img class='service_img' src="img/service/3.jpg" alt="">
+                    <h1 class="service_title">Creativity</h1>
+                    <h2 class="service_text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="service">
+
+                <div class="service_item">
+                    <img class='service_img' src="img/service/4.jpg" alt="">
+                    <h1 class="service_title">Seo</h1>
+                    <h2 class="service_text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                </div>
+                <div class="service_item">
+                    <img class='service_img' src="img/service/5.jpg" alt="">
+                    <h1 class="service_title">CSS/HTML</h1>
+                    <h2 class="service_text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</h2>
+                </div>
+                <div class="service_item">
+                    <img class='service_img' src="img/service/6.jpg" alt="">
+                    <h1 class="service_title">Digital</h1>
+                    <h2 class="service_text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                </div>
+
+            </div>
+        </div>
+        <!--Container-->
+    <!--</div>
+
+    <div class="section section_devices">
+        <div class="container">
+
+            <div class="section_header">
+                <h3 class="section_suptitle">For all devices</h3>
+                <h2 class="section_title">unique design</h2>
+            </div>
+
+            <div class="devices">
+                <div class="devices_img">
+                    <img class='devices_item' src="img/feauture/1.png" alt="">
+                    <img class='devices_item' src="img/feauture/2.png" alt="">
+                </div>
+
+                <div class="devices_text">
+                    <p>
+                        We create adaptive versions of your website so that the website is conveniently viewed from devices of various formats and with screens of various resolutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup" class="popup_block">
+        <div class="popup_body">
+          <div class="popup__body-inner">
+            <h2 class="form_title">Contact us</h2>
+
+            <form action="" class="popup_form">
+              <input class="form_name" type="text" placeholder="Name:*"/>
+              <input class="form_email" type="text" placeholder="Email:*"/>
+              <textarea class="form_textarea" placeholder="Comment...*"></textarea>
+              <input type="button" class="button_send" value="Send" />
+            </form>
+
+            <a href="#" class="popup_close">x</a>
+          </div>
+        </div>
+      </div>--->
+
+
+    </div>
+</body>
+
+</html>
