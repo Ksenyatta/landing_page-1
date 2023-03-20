@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grt-youtube-popup.css">
 </head>
 
 <body>
@@ -236,11 +237,11 @@
           <div class="popup__body-inner">
             <h2 class="form_title">Contact us</h2>
 
-            <form action="" class="popup_form">
+            <form class="popup_form" method="post" action="send.php">
               <input class="form_name" type="text" placeholder="Name:*"/>
-              <input class="form_email" type="text" placeholder="Email:*"/>
-              <textarea class="form_textarea" placeholder="Comment...*"></textarea>
-              <input type="button" class="button_send" value="Send" />
+              <input class="form_email" type="email" placeholder="Email:*"/>
+              <textarea class="form_textarea" name="message" placeholder="Comment...*"></textarea>
+              <input name="message" class="button_send youtube-link" youtubeid="yPu6qV5byu4" value="Send" />
             </form>
 
             <a href="#" class="popup_close">x</a>
@@ -296,6 +297,10 @@
         <span class="copyraight_text">Copyright © 2022 Mogo</span>
     </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/grt-youtube-popup.js"></script>
+    <script> $(".youtube-link").grtyoutube(); </script>
 </body>
 
 </html>
