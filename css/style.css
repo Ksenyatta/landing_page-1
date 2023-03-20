@@ -39,7 +39,9 @@ hr {
     left: 0;
 }
 
-
+.youtube-link {
+    cursor:pointer;
+}
 
 /* Intro */
 
